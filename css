@@ -1,0 +1,81 @@
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #87CEEB; /* Light sky blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 600px;
+}
+
+/* Canvas styling */
+canvas {
+  background-color: #70c5ce; /* Sky blue background */
+  display: block;
+  border: 2px solid #000;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Game Over Screen */
+#game-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 30px;
+  z-index: 10;
+}
+
+.hidden {
+  display: none;
+}
+
+#game-over h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+#game-over p {
+  font-size: 25px;
+}
+
+#restart-btn {
+  background-color: #FF6347; /* Tomato red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#restart-btn:hover {
+  background-color: #FF4500; /* Darker red */
+}
+
+/* Bird (can be styled via canvas in the JS) */
+.bird {
+  background-color: yellow;
+  border: 2px solid #FFD700; /* Golden outline */
+  border-radius: 50%; /* Make it round */
+}
